@@ -881,6 +881,10 @@ opacity: 0.6;
  .frmmm{
        padding: 10px; 
        margin-bottom: 50px;
+       border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
         }
 #testimonials .owl-dot.active {
   background-color: #50d8af;
