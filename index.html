@@ -7,6 +7,7 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/jquery.ripple.js" ></script>
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -31,13 +32,11 @@
 
 <script>
   $(document).ready(function(){
+       $("#intro").ripple();
  $("#hide").click(function(){
     $("#frm").toggle(1500);
   });
-      
-$("#req").click(function(){
-    $("#from").toggle(1500);
-  });
+
   });
     
 </script>
@@ -92,7 +91,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
           <li><a href="#portfolio">We Do</a></li>
           <li class="menu-has-children"><a href="">PrimeMed</a>
             <ul>
-              <li><a href="pages/Acne.html" class="list-group-item text-info">Acne Treatments</a>
+            <li><a href="pages/Acne.html" class="list-group-item text-info">Acne Treatments</a>
             <a href="pages/botox.html" class="list-group-item text-info">Botox</a>
             <a href="pages/dermalFilter.html" class="list-group-item text-info">Dermal Filter</a>
             <a href="pages/dremplanefacials.html" class="list-group-item text-info">Dremplane Facials</a>
@@ -141,7 +140,8 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
             <a href="pages/menslasehairremovel.html" class="list-group-item text-info">Men's Laser Hair Removel</a></li>
              </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -149,19 +149,17 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
 
     <section id="intro">
 <div>
- 
-
-    <br><br><br>
+<br>
       
 <div class="beauty">
-<div class="row fullscreen align-items-center justify-content-between ">
+<div class="row align-items-center justify-content-between ">
 						<div class="col-lg-6 col-md-4 col-sm-4">
 							<h4 style="font-family: 'Dancing Script', cursive;">Rest & Relax</h4>
 							<h1 style="font-family: 'Shrikhand', cursive;">Beauty & Spa Salon</h1>
 							<p>
 								Enjoy some much needed me time during a three hour spa session 
 							</p>
-							<a href="#" class="btn btn-info" style="padding: 15px; background-color: floralwhite ; background: rgba(247,131,193,1);
+							<a href="pages/contact.html" class="btn btn-info" style="padding: 15px; background-color: floralwhite ; background: rgba(247,131,193,1);
 background: -moz-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,131,193,1)), color-stop(100%, rgba(156,3,85,1)));
 background: -webkit-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
@@ -174,19 +172,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', end
 border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
 						</div><br>
 						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end P-5">
-<form class="p-3 form-container"
-id="from"
-style="border-radius: 5px 5px 5px 5px;
--moz-border-radius: 5px 5px 5px 5px;
--webkit-border-radius: 5px 5px 5px 5px;
-border: 0px solid #000000; -webkit-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
--moz-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68); display: none;"
->
+<form class="fom p-4 form-container">
    <center><div class="container">
-   <b class="h3">BOOK YOUR FREE</b>
-    <br><b class="h6">C O N S U L T A T I O N</b><br>
-       Or call our friendly staff today
+   <b class="h3 text-warning" style="font-weight: 700">BOOK YOUR FREE</b>
+    <br><b class="h6 text-info">C O N S U L T A T I O N</b><br>
+      <b class="text-dark">Or call our friendly staff today</b> 
         </div></center><br>
    <div class="form-group">
       <input type="email" class="form-control" id="inputEmail4" placeholder="Full Name">
@@ -199,90 +189,6 @@ box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68); display: none;"
 <div class="form-group">
   <input type="text" class="form-control" id="inputAddress" placeholder="Phone">
   </div>
-    <b class="h3">Services interested in:</b><br>
-    <div class="btn btn-info" id="hide" >Our Service</div>
-<br>
-    <div class="container p-4" id="frm" style="display: none;background-color: white; border: 1px solid black ;border-radius: 5px 5px 5px 5px;
--moz-border-radius: 5px 5px 5px 5px;
--webkit-border-radius: 5px 5px 5px 5px;
-border: 0px solid #000000; -webkit-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
--moz-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);">
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Acne Treatments</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Chest and Neck Rejuvenation</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Melanage Peel</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Photofacial</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Skin Resurfacing</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Redken Salon</b>
-    </label><br>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Botox</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Corrective Peel</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Facials</b>
-    </label> 
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Microlaser Peel</b>
-    </label>
-     <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Profractional</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""> <b>Strawberry Laser</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Sclerotherapy</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Cellulite Reduction/Body Contouring</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Dermal Fillers</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Laser Hair Removal</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""> <b>Permanent Cosmetics</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Scar Revision</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Dermaplane</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Massage Therapy</b>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value=""><b>Waxing</b>
-    </label>
-    </div>
-    <br>
-    <b>Preferred time of day for Appointment:</b>
-    <!-- Material unchecked -->
-<br>
-
-    <div class="radio container">
-      <label><input type="radio" name="optradio"><b>Morning</b></label>
-    </div>
-    <div class="radio container">
-      <label><input type="radio" name="optradio"><b>Afternoon</b></label>
-    </div>
 
 <div class="form-group">
 <textarea type="text" class="form-control" id="inputAddress" placeholder="Message"></textarea>
@@ -290,8 +196,7 @@ box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);">
 <button type="submit" class="btn btn-primary col-md-12">Send</button>
 
     
-         </form>
-						</div>
+         </form>		</div>
 					</div>
 				</div>
         </div>
@@ -407,27 +312,9 @@ Your face is our specialty, and our mission is to help you feel confident in you
   <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
 </div></center> 
            </div>
-<div class="owl-carousel clients-carousel" height="300px">
-            <img class="container" height="250px" src="pages/img/sld/Acne%20Treatments.jpg" alt="">
-          <img class="container" height="250px" src="pages/img/sld/Body%20Contouring.png" alt="">
-          <img class="container" height="250px" src="pages/img/sld/Botox.jpg" alt="">
-          <img class="container" height="250px" src="pages/img/sld/Chest%20and%20Neck%20Rejuvenation.jpg" alt="">
-           <img class="container" height="250px" src="pages/img/sld/Corrective%20Peel.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Dermal%20Fillers.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Dermaplane.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Facials.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Laser%20Hair%20Removal.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Massage%20Therapy.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Melanage%20Peel.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Microlaser%20Peel.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Permanent%20Cosmetics.png" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Photofacial.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Redken%20Salon.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Scar%20Revision.jpeg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Sclerotherapy.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Skin%20Resurfacing.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Strawberry%20Laser.jpg" alt="">
-             <img class="container" height="250px" src="pages/img/sld/Waxing.jpg" alt="">
+<div class="wow fadeInUp">
+            <img class="smart" src="img/main.jpg" alt="">
+         
         </div>
 
       </div>
@@ -536,8 +423,6 @@ During our complimentary consultations, I help our guests select the best servic
               </a>
             </div>
           </div>
-            
-            
             <div class="col-lg-3 col-md-4 wrk">
             <div class="portfolio-item wow fadeInUp">
               <a href="pages/img/sld/Facials.jpg" class="portfolio-popup">
@@ -549,153 +434,22 @@ During our complimentary consultations, I help our guests select the best servic
             </div>
           </div>
             
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Laser%20Hair%20Removal.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Laser%20Hair%20Removal.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Laser Hair Removal</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Massage%20Therapy.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Massage%20Therapy.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Massage Therapy</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-                
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Melanage%20Peel.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Melanage%20Peel.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Melanage Peel</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Microlaser%20Peel.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Microlaser%20Peel.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Microlaser Peel</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Permanent%20Cosmetics.png" class="portfolio-popup">
-                <img src="pages/img/sld/Permanent%20Cosmetics.png" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Permanent Cosmetics</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Photofacial.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Photofacial.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Photofacial</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Profractional.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Profractional.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Profractional</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Redken%20Salon.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Redken%20Salon.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Redken Salon</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Scar%20Revision.jpeg" class="portfolio-popup">
-                <img src="pages/img/sld/Scar%20Revision.jpeg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Scar Revision</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Sclerotherapy.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Sclerotherapy.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Sclerotherapy</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Skin%20Resurfacing.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Skin%20Resurfacing.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Skin Resurfacing</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-4 wrk">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="pages/img/sld/Strawberry%20Laser.jpg" class="portfolio-popup">
-                <img src="pages/img/sld/Strawberry%20Laser.jpg" alt="" class="imgg">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Strawberry Laser</h2></div>
-                </div>
-              </a>
-            </div>
-            </div>         
-          </div>
-      </div>
+ 
+    </div>
+    </div>
     </section>
       
-       <section id="testimonials" class="wow fadeInUp">
-      <img class="img-fluid bedi" src="beauty.png" style="z-index: 1;">
-      </section>
-<section id="contact" class="wow fadeInUp" style="margin-top: -90px;">
+       <section id="testimonials container" class="wow fadeInUp">
+      <img class="img-fluid bedi" src="img/cousin-left.png" width="1180" height="980">
+     
+      <div class="nmc" style="border:0; z-index: -1" >
+  
+          <center class="nmc"><h1><b>BEAUTY</b> WITH PASSION</h1>
+        <i><b>Beauty is our passion – and nothing makes us happier than<br> sharing our secrets exclusively with you, our customers.</b></i></center>
+      </div> </section>
+<section id="contact1" class="wow fadeInUp" style="margin-top: ">
       <div class="mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0; border-top: 5px solid skyblue" allowfullscreen></iframe>
       </div>
 </section>
       
@@ -778,7 +532,7 @@ Twiter : Company Profile<hr>
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
         -->
-        Designed by <a href="#" class="text text-white">Abdullah Mamun</a>
+        Designed by <a href="#" class="text text-white" >Abdullah Mamun</a>
       </div>
     </div>
   </footer>
