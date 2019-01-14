@@ -878,6 +878,10 @@ opacity: 0.6;
         margin: 0;
         padding: 0
     }
+ .frmmm{
+       padding: 10px; 
+       margin-bottom: 50px;
+        }
 #testimonials .owl-dot.active {
   background-color: #50d8af;
 }
@@ -1190,7 +1194,7 @@ display: none;
     .frmmm{
        padding: -10px; 
       margin-bottom: 50px;
-    }
+        }
     .smart{
         height: 150px;
         width: 360px ;
