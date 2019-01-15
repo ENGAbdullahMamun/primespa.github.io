@@ -31,12 +31,8 @@
 
 <script>
   $(document).ready(function(){
- $("#hide").click(function(){
-    $("#frm").toggle(1500);
-  });
-
-$("#hide").click(function(){
-   $("#show").toggle(1500);
+$(".2").click(function(){
+   $(".table").toggle(2500);
  });
   });
 
@@ -48,26 +44,23 @@ $("#hide").click(function(){
   <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block" style="background-color: floralwhite ; background: rgba(247,131,193,1);
-background: -moz-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,131,193,1)), color-stop(100%, rgba(156,3,85,1)));
-background: -webkit-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -o-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -ms-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: linear-gradient(to right, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', endColorstr='#9c0355', GradientType=1 );">
-    <div class="clearfix" >
-      <div class="contact-info float-left">
+  <section id="topbar" class="d-none d-lg-block" style="background: rgba(36,36,36,1);
+  background: -moz-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(36,36,36,1)), color-stop(12%, rgba(41,41,41,1)), color-stop(25%, rgba(48,48,48,1)), color-stop(39%, rgba(33,33,33,1)), color-stop(50%, rgba(20,20,20,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(8,8,8,1)), color-stop(76%, rgba(20,20,20,1)), color-stop(91%, rgba(13,13,13,1)), color-stop(100%, rgba(8,8,8,1)));
+  background: -webkit-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
+  background: -o-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
+  background: -ms-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
+  background: linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#080808', GradientType=1 );">
+    <div class="clearfix"><center>
+      <div class="contact-info d-inline-block">
         <i class="fa fa-envelope-o"></i> <a href="info@painfreemedspa.com" class="text-white"><b>info@painfreemedspa.com</b></a>
         <i class="fa fa-phone"></i><b class="text-white">+918 710 5060</b>
         </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/primemedspa/" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <div class="social-links d-inline-block">
+       <a href="https://www.facebook.com/primemedspa/" class="facebook"><i class="fa fa-facebook"></i></a>
       </div>
+  </center>
     </div>
   </section>
 
@@ -248,17 +241,13 @@ border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
     </section>
 
 <a href="contact.html"> <center class="wow fadeInUp text-dark h4"><b>Contact Us</b></center></a><hr>
-<div class=" wow fadeInUp">
- <h4 class="">Contact Us</h4>
 
-
-<div class="col-md-6">
-<form class="col-lg-6"
-style="">
+  <div class="row wow fadeInUp container fk">
+<form class=" col-lg-6 form-container frmmm">
    <center><div class="container">
    <b class="h3 text-warning" style="font-weight: 700">BOOK YOUR FREE</b>
     <br><b class="h6 text-info">C O N S U L T A T I O N</b><br>
-      <b class="text-white">Or call our friendly staff today</b>
+      <b class="">Or call our friendly staff today</b>
         </div></center><br>
    <div class="form-group">
       <input type="email" class="form-control" id="inputEmail4" placeholder="Full Name">
@@ -272,181 +261,190 @@ style="">
   <input type="text" class="form-control" id="inputAddress" placeholder="Phone">
   </div>
     <b class="h3 text-white"></b>
-<div class="container p-3" style="background-color: white;border-radius: 5px 5px 5px 5px;">
-<span class="col-md-3">
-    <h3 class="prm">PrimeMed</h3>
-
-<div class="col-sm-10">
+<div>
+<span class="2 btn btn-outline-dark col-md-12">Please Click Herer To See Our Services</span>
+  <table class="table table-border" style="font-size: 15px; display:none">
+  <thead>
+    <tr class="h5">
+      <th scope="col h3">PrimeSpa</th>
+      <th scope="col h3">PrimeMed</th>
+      <th scope="col h3">PrimeSpa</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+  <th style="font-size: 12px"><span>
+<div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Chest and Neck Rejuvenation</b>
+      <input type="checkbox" value="">Chest and Neck Rejuvenation</b>
  </div>
 </div>
 
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Melanage Mini Peel</b>
+      <input type="checkbox" value="">Melanage Mini Peel
  </div>
 </div>
 
 
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Photofacial</b>
+      <input type="checkbox" value="">Photofacial
  </div>
 </div>
 
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Skin Resurfacing</b>
+      <input type="checkbox" value="">Skin Resurfacing
  </div>
 </div>
 
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Redken Salon</b>
+      <input type="checkbox" value="">Redken Salon
  </div>
 </div>
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Botox</b>
+      <input type="checkbox" value="">Botox
  </div>
 </div>
 
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Facials</b>
+      <input type="checkbox" value="">Facials
  </div>
 </div>
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Microlaser Peel</b>
+      <input type="checkbox" value="">Microlaser Peel
 
 </div>
 </div>
 
-  <div class="col-sm-10">
+  <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Profracitional Theraphy</b>
+      <input type="checkbox" value="">Profracitional Theraphy
 </div>
 </div>
 
-<div class="col-sm-10">
+<div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>BBL Laser Hair Removel</b>
+      <input type="checkbox" value="">BBL Laser Hair Removel
     </div>
     </div>
 
 
-     <div class="col-sm-10">
+     <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Dermaplane Facials</b>
+      <input type="checkbox" value="">Dermaplane Facials
     </div>
     </div>
 
 
 
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Hair Loss Restoration</b>
+      <input type="checkbox" value="">Hair Loss Restoration
  </div>
 </div>
 
 
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Skin Resurfacing With Nano Laser Peel</b>
+      <input type="checkbox" value="">Skin Resurfacing With Nano Laser Peel
  </div>
 </div>
 
 
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Dermal Fillers</b>
+      <input type="checkbox" value="">Dermal Fillers
 
 
 </div>
 </div>
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""> <b>Permanent Cosmetics</b>
+      <input type="checkbox" value=""> Permanent Cosmetics
 
 
 </div>
 </div>
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Quelage Peel</b>
+      <input type="checkbox" value="">Quelage Peel
 </div>
 </div>
-      <div class="col-sm-10">
+      <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Scar Revision</b>
+      <input type="checkbox" value="">Scar Revision
  </div>
 </div>
-       <div class="col-sm-10">
+       <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Laser Hair Removal</b>
- </div>
-</div>
-
-    </span>
-
-    <span class="col-lg-3">
-    <h3 class="prm">PrimeSpa</h3>
-
-  <div class="col-sm-10">
-  <div class="form-check">
-      <input type="checkbox" value=""><b>Bridal Party</b>
+      <input type="checkbox" value="">Laser Hair Removal
  </div>
 </div>
 
- <div class="col-sm-10">
+</span></th>
+
+    <th style="font-size: 12px"><span class="">
+    <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Dermaplane</b>
+      <input type="checkbox" value="">Bridal Party
  </div>
 </div>
- <div class="col-sm-10">
+
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Massage Therapy</b>
+      <input type="checkbox" value="">Dermaplane
  </div>
 </div>
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Waxing</b>
- </div>
-</div> </span>
-<span class="col-lg-3">
-    <h3 class="prm">PrimeMen</h3>
- <div class="col-sm-10">
-  <div class="form-check">
-      <input type="checkbox" value=""><b>Hair Loss Restoration (Men)</b>
+      <input type="checkbox" value="">Massage Therapy
  </div>
 </div>
- <div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Men's Laser Hair Removal</b>
+      <input type="checkbox" value="">Waxing
+ </div>
+</div> </span></th>
+<th style="font-size: 12px"><span class="">
+ <div class="">
+  <div class="form-check">
+      <input type="checkbox" value="">Hair Loss Restoration (Men)
  </div>
 </div>
-<div class="col-sm-10">
+ <div class="">
   <div class="form-check">
-      <input type="checkbox" value=""><b>Men's Facials</b>
+      <input type="checkbox" value="">Men's Laser Hair Removal
+ </div>
+</div>
+<div class="">
+  <div class="form-check">
+      <input type="checkbox" value="">Men's Facials
  </div>
 </div>
 </span>
-
+</th>
+</tr>
+  </tbody>
+</table>
     <b class="">Preferred time of day for Appointment:</b>
 <br><div class="radio container">
-      <label><input type="radio" name="optradio"><b>Morning</b></label>
+      <label><input type="radio" name="optradio">Morning</label>
     </div>
     <div class="radio container">
-      <label><input type="radio" name="optradio"><b>Afternoon</b></label>
+      <label><input type="radio" name="optradio">Afternoon</label>
     </div>
 
 <div class="form-group">
@@ -456,33 +454,22 @@ style="">
 
  </div>
  </form>
-
-</div>
-<div class="col-md-5">
-  <center>
-      <img src="../logo.png" height="80px">
+<div class="vl"></div>
+<div class="col-lg-5 d-inline-block wow fadeInUp">
+  <div class="">
+  <img src="../logo.png" height="70px"/>
       <br>
-      <br><div class="conn">
-     <h2 style="font-weight: 700; color: brown">7307 S Yale Ave Tulsa, OK 74136</h2>
-<b>Phone: +918 710 5060</b><br>
+      <br>
+     <h4 style="font-weight: 700; color: brown">7307 S Yale Ave Tulsa, OK 74136</h4>
+     <b>Phone: +918 710 5060</b><br>
       <b>Fax: +918 392 4555</b><br>
-      <b>info@painfreemedspa.com</b><br></div>
-   </center>  </div>
-
-
+      <b>info@painfreemedspa.com</b><br>
 </div>
+ </div>
 </div>
-
-
-
-<!-- #contact -->
-</main>
- <footer class="bg-dark wow fadeInUp">
-     .
-</footer>
 <center style="background-color: whitesmoke;">
 <section id="contact" class="wow fadeInUp conta">
-<div class="col-md-5 d-inline-block">
+<div class="col-md-4 d-inline-block">
 <h3>
 <span class="fl-heading-text"><strong>Contact</strong></span>
 </h3>
@@ -531,7 +518,7 @@ Footer
 ============================-->
 <footer class="page-footer font-small special-color-dark bg-dark">
 <div class="footer-copyright text-center text-white p-1">© 2018 Copyright |
- <a href="https://mdbootstrap.com/education/bootstrap/"> Abdullah Mamun</a>
+ <a href="https://www.upwork.com/freelancers/~017565024bc78aeede"> Abdullah Mamun</a>
 </div>
 <!-- Copyright -->
 
