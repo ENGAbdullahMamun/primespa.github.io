@@ -29,7 +29,7 @@ background: linear-gradient(to right, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', endColorstr='#9c0355', GradientType=1 ); border-radius: 42px 42px 42px 42px;
 -moz-border-radius: 42px 42px 42px 42px;
 -webkit-border-radius: 42px 42px 42px 42px;
-border: 0px solid #000000;  
+border: 0px solid #000000;
 }
 a:hover,
 a:active,
@@ -42,11 +42,16 @@ a:focus {
     margin: 0;
     padding: 0;
     display: inline-block;
-    
-    
+
+
+}
+.loca {
+  background-image: url(../foot.jpg);
+  color: white;
+  font-weight: 400;
 }
 .beauty{
-    margin: 50px;
+    margin-left: 60px;
     padding: 15px;
     padding-bottom: -50px;
 }
@@ -61,10 +66,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+
 }
 
 /* Back to top button */
@@ -141,9 +147,8 @@ h6 {
 }
 .prm{
     font-weight: 700;
-    border-bottom: 2px solid gray;
+    display: flex;
     font-size: 25px;
-    opacity: 0.6;
 }
 .vl{
   border-left: 3px solid gray;
@@ -158,7 +163,6 @@ h6 {
 padding: 20px 0;
   height: 84px;
   transition: all 0.5s;
-  z-index: 997;
   background: #fff;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
@@ -407,7 +411,12 @@ padding: 20px 0;
 .nav-menu ul li:hover > a {
   color: #50d8af;
 }
-
+ft{
+font-size: 15px;
+text-align: left;
+margin-left: 650px;
+padding: 30px 30px 30px 30px;
+}
 .nav-menu ul ul {
   margin: 0;
 }
@@ -665,7 +674,7 @@ margin: 0;
 .imgg{
     height: 250px;
     width: 230px;
-    
+
 }
 #services .box p {
   font-size: 14px;
@@ -674,11 +683,13 @@ margin: 0;
   line-height: 24px;
 }
 .fom{
--webkit-box-shadow: 0px 0px 80px -12px rgba(10,10,10,1);
--moz-box-shadow: 0px 0px 80px -12px rgba(10,10,10,1);
-box-shadow: 0px 0px 80px -12px rgba(10,10,10,1);border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
+margin-left: -350px;
+border: 0px solid #000000;
+background-color: white;
+padding: 20px;
+border-radius: 17px 17px 17px 17px;
+-moz-border-radius: 17px 17px 17px 17px;
+-webkit-border-radius: 17px 17px 17px 17px;
 border: 0px solid #000000;
 }
 /* Clients Section
@@ -728,7 +739,7 @@ border: 0px solid #000000;
 text-align: center;border-radius: 5px 5px 5px 5px;
 -moz-border-radius: 5px 5px 5px 5px;
 -webkit-border-radius: 5px 5px 5px 5px;
-border: 0px solid #000000; 
+border: 0px solid #000000;
 -webkit-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
 -moz-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
 box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
@@ -747,7 +758,10 @@ box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
 }
 .conta{
   background-image: url("../foot.jpg");
-  background-color: #cccccc; margin-top: -50px ;
+  background-color: #cccccc;
+  margin-top: -30px ;
+  color: white;
+  font-weight: bold;
 }
 #portfolio .portfolio-item {
   overflow: hidden;
@@ -790,8 +804,9 @@ box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
   transform: translate(-50%, -50%);
 }
 
-/* Testimonials Section
---------------------------------*/
+.scrollto{
+      animation: yourAnimation 5s forwards 0s ease;
+}
 
 #testimonials {
   padding: 30px 0;
@@ -855,7 +870,8 @@ opacity: 0.6;
   margin: 0 auto 15px auto;
 }
 .tact{
-    margin-top: -100px;
+    margin-top:
+    ;
 }
 #testimonials .owl-nav,
 #testimonials .owl-dots {
@@ -878,14 +894,6 @@ opacity: 0.6;
         margin: 0;
         padding: 0
     }
- .frmmm{
-       padding: 10px; 
-       margin-bottom: 50px;
-       border-radius: 15px 15px 15px 15px;
--moz-border-radius: 15px 15px 15px 15px;
--webkit-border-radius: 15px 15px 15px 15px;
-border: 0px solid #000000;
-        }
 #testimonials .owl-dot.active {
   background-color: #50d8af;
 }
@@ -963,7 +971,7 @@ border: 0px solid #000000;
   font-size: 18px;
 }
  .bedi{
-        z-index: 90;
+        z-index: 1;
         position: absolute;
         margin-top: -100px;
         margin-left: 350px;
@@ -989,11 +997,7 @@ border: 0px solid #000000;
 #team .member .social a {
   color: #fff;
 }
- .conn{
-        margin: 0;
-        padding: 5px;
-        border: 2px solid gray;
-    }
+
 #team .member .social i {
   font-size: 16px;
   margin: 0 2px;
@@ -1107,33 +1111,7 @@ border: 0px solid #000000;
   background: #2dc899;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 
-#footer {
-  background: #f2f5f8;
-  padding: 0 0 0px 0;
-  font-size: 14px;
-}
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 15px;
-
-}
-
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #555;
- 
-}
-
-
-#footer .credits a {
-  color: #0c2e8a;
-}
 @media (min-width: 768px) {
   #contact .contact-address,
   #contact .contact-phone,
@@ -1196,23 +1174,18 @@ display: none;
         display: none;
     }
     .frmmm{
-       padding: -10px; 
+       padding: -10px;
       margin-bottom: 50px;
-        }
+    }
     .smart{
         height: 150px;
-        width: 360px ;
+        width: 400px ;
         display: inline-block ;
         margin: 0;
         padding: 0
-    } 
-    .conn{
-        margin: 0;
-        padding: 0;
-        border: 1px solid gray;
     }
 .xxx{
-    
+
     width: 1000px;
 }
 .conta{
@@ -1253,11 +1226,11 @@ display: none;
 .beauty{
 margin: auto;
 margin-top: ;
-  
-} 
+
+}
 .beauty h4{
 font-size: 20px;
-  
+
 }
 .imgg{
     height: 250px;
@@ -1277,20 +1250,18 @@ padding: 0;
 .beauty a{
 font-size: 15px;
 padding: 12px;
-  
+
 }
 
 .beauty h1{
 font-size: 30px;
-  
-}
-    
-#intro {
-width: 100%;
-height: 100%;
-background: url("../img/mobil.jpg") no-repeat;
-background-size: cover;
 
+}
+
+#intro {
+margin: 0;
+padding: 0;
+background: url("../img/mobil.jpg");
 }
 
 .section-header p {
@@ -1358,4 +1329,16 @@ border: 5px dashed #5c5b5c;
   #contact #google-map {
     margin-top: 20px;
   }
+}
+@keyframes yourAnimation{
+    0%{
+        transform: translateX(-350%);
+        opacity: 1;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 15px 10px 15px ;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
 }
