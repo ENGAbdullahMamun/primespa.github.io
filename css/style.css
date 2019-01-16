@@ -1,13 +1,4 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 
 body {
   background: #fff;
@@ -382,7 +373,7 @@ padding: 20px 0;
   color: #555;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
 
