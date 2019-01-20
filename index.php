@@ -114,24 +114,24 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
           <li><a href="#portfolio">We Do</a></li>
           <li class="menu-has-children"><a href="">PrimeMed</a>
             <ul>
-                <li><a href="pages/Acne.php">Acne Treatments</a></li>
-                <li><a href="pages/botox.php" >Botox</a></li>
-                <li> <a href="pages/dermalFilter.php">Dermal Filter</a></li>
+            <li><a href="pages/Acne.php">Acne Treatments</a></li>
+            <li><a href="pages/botox.php" >Botox</a></li>
+            <li> <a href="pages/dermalFilter.php">Dermal Filter</a></li>
             <li><a href="pages/dremplanefacials.php">Dremplane Facials</a></li>
             <li><a href="pages/melanageMinPeel.php">Melanage Min Peel</a></li>
             <li><a href="pages/skinResufacing.php" >Skin Resurfacing</a></li>
             <li><a href="pages/BBLlaser.php">BBL Laser Hair Removel</a></li>
             <li><a href="pages/chestandneck.php" >Chest And Neck Rejuvenation</a></li>
-           <li> <a href="pages/hairlossrestoration.php">Hair Lose Restoration</a></li>
+            <li> <a href="pages/hairlossrestoration.php">Hair Lose Restoration</a></li>
             <li><a href="pages/microlaserpeel.php">Microlaser Peel</a></li>
-           <li> <a href="pages/permanetcosmetic.php">Permanet Cosmetics</a></li>
+            <li> <a href="pages/permanetcosmetic.php">Permanet Cosmetics</a></li>
             <li><a href="pages/searrevision.php" >Sear Revision</a></li>
-           <li> <a href="pages/profacial.php">Photo Facial</a></li>
-               <li><a href="pages/queladge.php">Queladge</a></li>
+            <li> <a href="pages/profacial.php">Photo Facial</a></li>
+            <li><a href="pages/queladge.php">Queladge</a></li>
             <li><a href="pages/profacialtherafy.php">Profacial Therafy</a></li>
             <li><a href="pages/skinresurfacingnano.php">Skin Resurfacing with Nano Laser Peel</a></li>
             </ul>
-          </li>
+           </li>
 
           <li class="menu-has-children"><a href="">PrimeSpa</a>
             <ul>
@@ -171,6 +171,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
   </header><!-- #header -->
 
     <section id="intro">
+     <br>
 <div>
 <br>
 
@@ -218,8 +219,7 @@ border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
               <div class="form-group">
                 <input type="text" required="required" class="form-control" id="inputAddress" name="phone" placeholder="Phone">
                 </div>
-                  <b class="h5 text-dark d-inline-block">Services interested in:</b><br>
-                  <a class="text-white btn btn-info" id="hide">Please click Here To See Our Services...</a><br>
+             <a class="text-white btn btn-info" id="hide">Please click Here To See Our Services...</a><br>
               <div class="container p-3" id="show" style="display: none ; position: relative; background-color: white; padding: 50px; font-size: 12px; border-radius: 5px 5px 5px 5px;
               "><br>
                   <h3 class="prm text-success">PrimeMed</h3>
@@ -333,18 +333,19 @@ border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
 					</div>
 				</div>
         </div>
+        <br><br>
   </section>
   <main id="main">
 
-   <section class="wow fadeInUp">
+   <center><section class="wow fadeInUp">
    <div class="loca">
-  <center><div class="continer">
-<div class="d-inline-block col-md-4 col-lg-4 col-xl-4 col-sm-4" style="display: flex">
+<div class="container" style="">
+<div class="d-inline-block">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-map-marker"></span>Location<br>
+                <span class="pp-list-item-icon fa fa-map-marker"></span><strong>Location</strong><br>
 				<span class="pp-list-item-text">7307 S Yale Ave Tulsa, OK 74136</span>
 			</li>
 
@@ -352,62 +353,34 @@ border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
 		</ul>
 </div>
 <loc>
-<div class="d-inline-block col-md-2 col-lg-2 col-xl-2 col-sm-2 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
-<style>
-
-li:hover {
-border-radius: 22px 22px 22px 22px;
--moz-border-radius: 22px 22px 22px 22px;
--webkit-border-radius: 22px 22px 22px 22px;
-border: 0px solid #000000;
-color: white;
-background-color: black;
-margin: 0;
-padding: 0;
- }
-    pp-list-item-icon{
-        color: black;
-          width: 40px;
-         height: 40px;
-         line-height: 35px;
-          margin-top: 5px;
-          transition: 0.5s;
-        border-radius: 200px 200px 200px 200px;
--moz-border-radius: 200px 200px 200px 200px;
--webkit-border-radius: 200px 200px 200px 200px;
-border: 0px solid #000000;
- background-color: white;
-       display: flex;
-    }
-</style>
-
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none ;">
-                <span class="pp-list-item-icon ua-icon fa fa-users"></span>Experienced<br>
+                <span class="pp-list-item-icon ua-icon fa fa-users"></span><strong>Experienced</strong><br>
 				<span class="pp-list-item-text">Team</span>
 			</li>
 
 
 		</ul>
 </div>
-<div class="d-inline-block col-md-2 col-lg-2 col-xl-2 col-sm-2 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-cogs"></span>Cutting edge<br>
+                <span class="pp-list-item-icon fa fa-cogs"></span><strong>Cutting edge</strong><br>
 				<span class="pp-list-item-text">Technology</span>
 			</li>
 
 
 		</ul>
 </div>
-<div class="d-inline-block col-md-2 col-lg-2 col-xl-2 col-sm-2 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-smile-o"></span>You will fee<br>
+                <span class="pp-list-item-icon fa fa-smile-o"></span><strong>You will fee</strong><br>
 				<span class="pp-list-item-text">Rejuvenated</span>
 			</li>
 
@@ -416,23 +389,27 @@ border: 0px solid #000000;
 </div>
       </loc>
 </div>
+</div>
+       </section></center></main>
+<section id="services">
+ <center>
+   
+ <div class="embed-responsive embed-responsive-16by9 col-lg-11 d-inline-block wow fadeInUp">
+  <img class="embed-responsive-item" src="img/rec.jpg" allowfullscreen />
+     <div class="centered"><div class="">
+          <center class="msc"><h2><b>Welcome</b> to PainFree Medical Spa</h2></center>
+          <p><welcome class="col-6">The place to go for discerning clients who desire non-surgical beauty solutions.
+Your face is our specialty, and our mission is to help you feel confident in your skin every day. By combining the art and science of beauty we will help you achieve the look you desire by providing top-of-the-line, physician-directed services and medical-grade skin care products. The latest in laser technology can be found at Prime along with staff experienced in injectables and educated in the newest techniques .  Many of our treatments are non-invasive, and in most cases, you are able to return to work on the same day.  It’s not vain to want to look great.  It means you are striving to be the best version of you so you can step out in confidence every day.</welcome></p>
+</div></div>
+<div class="">
+   <video controls class="vdt col-5">
+       <source class="embed-responsive embed-responsive-16by9" src="325474563.mp4">
+  </video>        
+</div></div>
 </center>
-</div>
-	<!-- #nav-menu-container -->
-
-    </section><!-- #about -->
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-            <center>
-          <div class="embed-responsive embed-responsive-16by9 col-lg-5 d-inline-block wow fadeInLeft">
-  <img class="embed-responsive-item" src="img/rec.jpg" allowfullscreen/>
-</div>
-        <div class="embed-responsive embed-responsive-16by9 col-lg-5 d-inline-block wow fadeInRight">
-  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
-            </div></center>
+    </section>
+<br>
+     <section id="services">
          <center>
        <div class="col-lg">
         <div class="top">
@@ -440,50 +417,27 @@ border: 0px solid #000000;
               <img class="container m-auto p-3" src="img/1.jpg">
               <h4 class="title m-auto p-auto">PrimeMed</h4>
                <p class="containear m-auto p-auto">Services include injectables, laser treatments, micro-needling, skin tightening, spider vein removal, acne treatments, and much more.</p>
-                <a href="pages/skinpen.php" class="btn btn-dark text-white">Learn More</a>
+                <a href="pages/skinpen.html" class="btn btn-dark text-white">Learn More</a>
             </div>
           <div class="d-inline-block col-lg-3 box wow fadeInLeft  top">
             <img class="container m-auto p-3" src="img/2.jpg"><br><br>
               <h4 class="title m-auto p-auto">PrimeSpa</h4>
                <p class="containear m-auto p-auto">Services we offer include massage therapy, waxing, dermaplaning, and more.</p>
-                <a href="pages/massagetheraphy.php" class="btn btn-dark text-white">Learn More</a>
+                <a href="pages/massagetheraphy.html" class="btn btn-dark text-white">Learn More</a>
             </div>
 
           <div class="d-inline-block col-lg-3 box wow fadeInLeft top">
           <img class="container m-auto p-3" src="img/3.jpg"><br><br><br>
               <h4 class="title m-auto p-auto">Resources</h4>
                <p class="containear m-auto p-auto">Check out our Frequently Asked Questions.</p>
-                <a href="pages/primespa.php" class="btn btn-dark text-white">Learn More</a>
+                <a href="pages/primespa.html" class="btn btn-dark text-white">Learn More</a>
             </div>
           </div>
               </div>
         </center>
 
-      </section><!-- #services -->
+      </section>
 
-    <section id="" class="wow fadeInUp">
-      <div class="">
-       <div class="container">
-          <center><h2><b>Welcome</b> to Prime Medical Spa</h2></center>
-          <p><welcome>The place to go for discerning clients who desire non-surgical beauty solutions.
-
-Your face is our specialty, and our mission is to help you feel confident in your skin every day.  By combining the art and science of beauty we will help you achieve the look you desire by providing top-of-the-line, physician-directed services and medical-grade skin care products. The latest in laser technology can be found at Prime along with staff experienced in injectables and educated in the newest techniques .  Many of our treatments are non-invasive, and in most cases, you are able to return to work on the same day.  It’s not vain to want to look great.  It means you are striving to be the best version of you so you can step out in confidence every day.</welcome></p>
-           <br>
-  <center>
-
-</center>
-           </div>
-<div class="wow fadeInUp">
-            <img class="smart" src="img/main.jpg" alt="">
-
-        </div>
-
-      </div>
-    </section><!-- #clients -->
-
-    <!--==========================
-      Our Portfolio Section
-    ============================-->
     <section id="portfolio" class="wow fadeInUp">
       <div class="">
         <div class="container">
@@ -600,27 +554,31 @@ During our complimentary consultations, I help our guests select the best servic
     </div>
     </div>
     </section>
-
+<br><br>
        <section id="testimonials container" class="wow fadeInUp">
-      <img class="img-fluid bedi" src="img/cousin-left.png" width="1180" height="980">
+      
 
       <div class="nmc" style="border:0; z-index: -1" >
 
           <center class="nmc"><h1><b>BEAUTY</b> WITH PASSION</h1>
-        <i><b>Beauty is our passion – and nothing makes us happier than<br> sharing our secrets exclusively with you, our customers.</b></i></center>
+              <i><b>Beauty is our passion – and nothing makes us happier than<br> sharing our secrets exclusively with you, our customers.</b></i></center>
       </div> </section>
 <section id="contact1" class="wow fadeInUp">
       <div class="mapp">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0; border-top: 5px solid skyblue;" allowfullscreen></iframe>
+           <center> <img class="img-fluid bedi" src="img/cousin-left.png" width="916" height="800"></center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.476944447223!2d-95.9237571843191!3d36.057469280108464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b692422763fc81%3A0x7fd5a89305af99c5!2s7307+S+Yale+Ave%2C+Tulsa%2C+OK+74136%2C+USA!5e0!3m2!1sen!2sbd!4v1547975326389" width="100%" height="380" frameborder="0" style="border:0; border-top: 5px solid skyblue;" allowfullscreen></iframe>
       </div>
 </section>
 
+<section class="wow fadeInUp conta">
+<div>
+    <img src="logo1.png" class="fl col-md-3">
+    
+<span>
+<div class="col-md-3 d-inline-block container">
 
-    <center style="background-color: whitesmoke;">
-     <section id="contact" class="wow fadeInUp conta">
-  <div class="col-md-5 d-inline-block">
 <h3>
-<span class="fl-heading-text"><strong>Contact</strong></span>
+<span><strong>Contact</strong></span>
 </h3>
 Phone : +918 710 5060<br>
 Fax : +918 392 4555<br>
@@ -629,7 +587,7 @@ Address : 7307 S Yale Ave Tulsa, OK 74136<br>
 Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
 </div>
 
- <div class="container col-md-5 d-inline-block" >
+ <div class="col-md-3 d-inline-block">
 
 <h2 class="fl-heading">
 <span class="fl-heading-text"><strong>Opening</strong> Hours</span>
@@ -660,20 +618,15 @@ Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
 <b>Sunday by appointment only.</b>
 </div>
 </div>
+    </span>
+</div>
 </section>
-</center><!-- #contact -->
-  <!--==========================
-    Footer
-  ============================-->
+
 <footer class="page-footer font-small special-color-dark bg-dark">
  <div class="footer-copyright text-center text-white p-1">© 2018 Copyright |
       <a href="https://www.upwork.com/freelancers/~017565024bc78aeede"> Abdullah Mamun</a>
     </div>
-    <!-- Copyright -->
-
-  </footer>
-
-  <!-- JavaScript Libraries -->
+ </footer>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -684,12 +637,7 @@ Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
-
-  <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
 </body>
 </html>
