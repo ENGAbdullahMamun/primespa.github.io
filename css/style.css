@@ -37,6 +37,17 @@ a:focus {
 
 
 }
+.acc{
+    margin-left: 70px;
+}
+.acc1{
+    margin-left: 50px;
+    
+}
+.lead{
+  font-size: 14px;
+  margin-right: 15px;
+}
 .centered {
   position: absolute;
   top: 70%;
@@ -1264,6 +1275,10 @@ display: none;
 
 .vdt{
     display: none;
+}
+.acc{
+    margin-left: 30px;
+    font-size: 14px;
 }
 .mapp{
   margin-bottom :-55px
