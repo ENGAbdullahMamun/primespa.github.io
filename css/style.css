@@ -1,9 +1,10 @@
 
 
 body {
-  background: #fff;
+  background-color: white;
   color: #444;
   font-family: "Open Sans", sans-serif;
+   float: inherit;
 }
 a {
   color: #50d8af;
@@ -36,16 +37,42 @@ a:focus {
 
 
 }
-
-.pp-list-item-text{
-    font-weight: 500;
+.centered {
+  position: absolute;
+  top: 83%;
+  background-color: gray; 
+  color: white;
+  background-blend-mode: overlay;
+    opacity: 0.8;
 }
+.vdt{
+    margin-top: -300px; margin-left: 1040px
+}
+.fl-node-5a8aeb2020bc6 .pp-icon-list .pp-icon-list-items .pp-icon-list-item:hover .pp-list-item-icon {
+	background-color: #;
+	color: #ffffff;
+	border-color: #;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+}
+
+li:hover {
+border-radius: 22px 22px 22px 22px;
+-moz-border-radius: 22px 22px 22px 22px;
+-webkit-border-radius: 22px 22px 22px 22px;
+border: 0px solid #000000;
+color: white;
+background-color: black;
+margin: 0;
+padding: 0;
+ }
+
 .loca {
   background-image: url(../foot.jpg);
-      background-repeat: no-repeat;
-    background-size: cover;
+   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  font-weight: 400;
 }
 .beauty{
     margin-left: 60px;
@@ -65,9 +92,8 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   padding: 0;
-
 }
 
 /* Back to top button */
@@ -260,7 +286,6 @@ padding: 20px 0;
   background: #0c2e8a;
   border: 2px solid #0c2e8a;
 }
-
 #intro .intro-content .btn-get-started:hover {
   background: none;
   color: #0c2e8a;
@@ -773,11 +798,21 @@ box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.68);
 .conta{
   background-image: url("../foot.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
   background-color: #cccccc;
-  margin-top: -30px ;
+  margin-top: -20px ;
   color: white;
   font-weight: bold;
+ padding-top: 40px;
+ padding-bottom: -30px;
+
+  
+}
+.fl{
+margin-top: -100px;
+margin-left: 200px;
+margin-right: 70px;
+
 }
 #portfolio .portfolio-item {
   overflow: hidden;
@@ -989,21 +1024,18 @@ opacity: 0.6;
 }
  .bedi{
         z-index: 1;
-        position: absolute;
-        margin-top: -100px;
-        margin-left: 0;
-      margin-right: 0;
-     padding: 0;
-        background-size: cover;
-        }
+        position: relative;
+       margin-bottom: -80px;
+    
+}
 
 .nmc{
-    z-index: 1;
-    padding: 30px;
-    margin: 0;
-    background-color: antiquewhite;
-    margin-top: 50px;
-  }
+   
+    padding: 40px;
+    position: relative;
+    margin-bottom: -170px;
+    background-color: floralwhite;
+ }
 #team .member span {
   font-style: italic;
   display: block;
@@ -1025,10 +1057,6 @@ opacity: 0.6;
 
 /* Contact Section
 --------------------------------*/
-
-#contact {
-  padding: 30px 0;
-}
 
 #contact .contact-info {
   margin-bottom: 20px;
@@ -1181,6 +1209,10 @@ opacity: 0.6;
 loc{
     display: none;
 }
+.fl{
+margin: 0px;
+margin-bottom: 25px;
+}
 .fk{
   margin: 0;
   margin-bottom: 40px;
@@ -1212,6 +1244,26 @@ display: none;
 .xxx{
 
     width: 1000px;
+}
+.centered {
+  position: absolute;
+  top: 55%;
+  background-color: gray; 
+  color: white;
+  font-size: 7px;
+}
+   .centered .msc h2{
+      font-size: 15px;
+    }
+      .centered .msc b{
+      font-size: 12px;
+    }
+      .centered .msc p{
+      font-size: 5px;
+    }
+
+.vdt{
+    display: none;
 }
 .mapp{
   margin-bottom :-55px
@@ -1268,8 +1320,8 @@ font-size: 20px;
 .wrk{
 
 border: 20px solid white;
-width: 48%;
-height: 10%;
+width: 50%;
+height: 30%;
     }
 .beauty a{
 font-size: 15px;
