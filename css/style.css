@@ -1278,17 +1278,17 @@ display: none;
     width: 1000px;
 }
 .centered {
-  position: absolute;
   top: 55%;
   background-color: gray; 
   color: white;
-  font-size: 7px;
+  padding: 5px;
+  font-size: 6px;
 }
    .centered .msc h2{
       font-size: 15px;
     }
       .centered .msc b{
-      font-size: 12px;
+      font-size: 10px;
     }
       .centered .msc p{
       font-size: 5px;
