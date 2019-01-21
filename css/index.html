@@ -44,26 +44,10 @@
 
 </head>
 <body id="body">
-<style>
-    .text{
-         animation: scr 5s infinite 0s ease;
-    }
-    
-    @keyframes scr{
-    0%{
-        transform: scale(4);
-        background: white;
-        color : yellow;
-        outline: 2px solid yellow;
-        }
-    100%{
-        }
-}
 
-.elementToAnimate{
-    animation: yourAnimation 3s forwards 0s ease;
-}
-    </style>
+  <!--==========================
+    Top Bar
+  ============================-->
   <section id="topbar" class="d-none d-lg-block" style="background: rgba(36,36,36,1);
 background: -moz-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(41,41,41,1) 12%, rgba(48,48,48,1) 25%, rgba(33,33,33,1) 39%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 51%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 76%, rgba(13,13,13,1) 91%, rgba(8,8,8,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(36,36,36,1)), color-stop(12%, rgba(41,41,41,1)), color-stop(25%, rgba(48,48,48,1)), color-stop(39%, rgba(33,33,33,1)), color-stop(50%, rgba(20,20,20,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(8,8,8,1)), color-stop(76%, rgba(20,20,20,1)), color-stop(91%, rgba(13,13,13,1)), color-stop(100%, rgba(8,8,8,1)));
@@ -75,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', end
     <div class="clearfix"><center>
       <div class="contact-info d-inline-block">
         <i class="fa fa-envelope-o"></i> <a href="info@painfreemedspa.com" class="text-white"><b>info@painfreemedspa.com</b></a>
-        <i class="fa fa-phone"></i><b class="text-white text" style="position: relative;">+918 710 5060</b>
+        <i class="fa fa-phone"></i><b class="text-white">+918 710 5060</b>
         </div>
         <div class="social-links d-inline-block">
        <a href="https://www.facebook.com/primemedspa/" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -91,16 +75,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', end
 -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);
 -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);
 box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
-    <div class="container">
+    <div class="container" style="background-color: whitesmoke;">
 <div id="logo" class="pull-left">
      <a href="#body"><img src="logo.png" class="scrollto" height="50px"></a>
-        </div>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#body">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Services</a></li>
+          <li><a href="#portfolio">We Do</a></li>
           <li class="menu-has-children"><a href="">PrimeMed</a>
             <ul>
             <li><a href="pages/Acne.php">Acne Treatments</a></li>
@@ -168,11 +154,21 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
 <div class="row align-items-center justify-content-between ">
 						<div class="col-lg-6 col-md-4 col-sm-4">
 							<h4 style="font-family: 'Dancing Script', cursive;">Rest & Relax</h4>
-							<h1 style="font-family: 'Shrikhand', cursive;">Learn More About Our Current Speicals</h1>
+							<h1 style="font-family: 'Shrikhand', cursive;">Beauty & Spa Salon</h1>
 							<p>
 								Enjoy some much needed me time during a three hour spa session
 							</p>
-						
+							<a href="pages/contact.php" class="btn btn-info" style="padding: 15px; background-color: floralwhite ; background: rgba(247,131,193,1);
+background: -moz-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,131,193,1)), color-stop(100%, rgba(156,3,85,1)));
+background: -webkit-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
+background: -o-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
+background: -ms-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
+background: linear-gradient(to right, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', endColorstr='#9c0355', GradientType=1 ); border-radius: 42px 42px 42px 42px;
+-moz-border-radius: 42px 42px 42px 42px;
+-webkit-border-radius: 42px 42px 42px 42px;
+border: 0px solid #000000;" id="req">REQUEST AN APPOINTMENT</a>
 						</div><br>
 						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end P-5">
 
@@ -302,17 +298,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
               <div class="form-group">
               <textarea type="text" class="form-control" id="inputAddress" name="msg" placeholder="Message"></textarea>
                 </div>
-              <button type="submit" name="submit" class="btn btn-primary col-md-12" style="padding: 12px;background: rgba(247,131,193,1);
-background: -moz-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,131,193,1)), color-stop(100%, rgba(156,3,85,1)));
-background: -webkit-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -o-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -ms-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: linear-gradient(to right, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', endColorstr='#9c0355', GradientType=1 ); border-radius: 42px 42px 42px 42px;
--moz-border-radius: 42px 42px 42px 42px;
--webkit-border-radius: 42px 42px 42px 42px;
-border: 0px solid #000000;">REQUEST AN APPOINTMENT</button>
+              <button type="submit" name="submit" class="btn btn-primary col-md-12">REQUEST AN APPOINTMENT</button>
 
 
                        </form>
@@ -326,52 +312,51 @@ border: 0px solid #000000;">REQUEST AN APPOINTMENT</button>
   </section>
   <main id="main">
 
-<section class="wow fadeInUp">
+   <center><section class="wow fadeInUp">
    <div class="loca">
 <div class="container" style="">
-<div class="d-inline-block acc" style="">
+<div class="d-inline-block">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
                 <span class="pp-list-item-icon fa fa-map-marker"></span><strong>Location</strong><br>
-				<span class="lead" style="margin-left: 10px">7307 S Yale Ave Tulsa, OK 74136</span>
+				<span class="pp-list-item-text">7307 S Yale Ave Tulsa, OK 74136</span>
 			</li>
 
 
 		</ul>
 </div>
 <loc>
-<div class="d-inline-block acc1 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none ;">
                 <span class="pp-list-item-icon ua-icon fa fa-users"></span><strong>Experienced</strong><br>
-				<span class="lead" style="margin-left: 20px">Team</span>
+				<span class="pp-list-item-text">Team</span>
 			</li>
 
 
 		</ul>
 </div>
-<div class="d-inline-block acc1 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
                 <span class="pp-list-item-icon fa fa-cogs"></span><strong>Cutting edge</strong><br>
-				<span class="lead" style="margin-left: 20px">Technology</span>
+				<span class="pp-list-item-text">Technology</span>
 			</li>
 
 
 		</ul>
 </div>
-<div class="d-inline-block acc1 locc">
+<div class="d-inline-block locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
 
 
 			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-smile-o"></span>
-                <strong>You will fee</strong><br>
-				<span class="lead" style="margin-left: 20px">Rejuvenated</span>
+                <span class="pp-list-item-icon fa fa-smile-o"></span><strong>You will fee</strong><br>
+				<span class="pp-list-item-text">Rejuvenated</span>
 			</li>
 
 
@@ -380,31 +365,26 @@ border: 0px solid #000000;">REQUEST AN APPOINTMENT</button>
       </loc>
 </div>
 </div>
-      </section></main>
-<section style="margin-top: 25px">
+       </section></center></main>
+<section id="services">
  <center>
-   <div class="col-lg-11 d-inline-block wow fadeInUp">
- <video class="embed-responsive-1by1  col-4 vdt" controls>
-         <source src="325474563.mp4"/>
-</video>   
- <div class="embed-responsive embed-responsive-16by9 ">
    
-  <img class="embed-responsive-item" src="img/rec.jpg"/>
-      <div class="centered">
-
-
-
-<center class="msc"><h2><b>Welcome</b> to PainFree Medical Spa</h2></center>
-<p><welcome class="col-6">The place to go for discerning clients who desire non-surgical beauty solutions.
+ <div class="embed-responsive embed-responsive-16by9 col-lg-11 d-inline-block wow fadeInUp">
+  <img class="embed-responsive-item" src="img/rec.jpg" allowfullscreen />
+     <div class="centered"><div class="">
+          <center class="msc"><h2><b>Welcome</b> to PainFree Medical Spa</h2></center>
+          <p><welcome class="col-6">The place to go for discerning clients who desire non-surgical beauty solutions.
 Your face is our specialty, and our mission is to help you feel confident in your skin every day. By combining the art and science of beauty we will help you achieve the look you desire by providing top-of-the-line, physician-directed services and medical-grade skin care products. The latest in laser technology can be found at Prime along with staff experienced in injectables and educated in the newest techniques .  Many of our treatments are non-invasive, and in most cases, you are able to return to work on the same day.  It’s not vain to want to look great.  It means you are striving to be the best version of you so you can step out in confidence every day.</welcome></p>
-</div>
-</div>
-</div>
+</div></div>
+<div class="">
+   <video controls class="vdt col-5">
+       <source class="embed-responsive embed-responsive-16by9" src="325474563.mp4">
+  </video>        
+</div></div>
 </center>
- </section>
+    </section>
 <br>
      <section id="services">
-         <center><h2>Our <b>Services</b></h2></center>
          <center>
        <div class="col-lg">
         <div class="top">
@@ -414,14 +394,14 @@ Your face is our specialty, and our mission is to help you feel confident in you
                <p class="containear m-auto p-auto">Services include injectables, laser treatments, micro-needling, skin tightening, spider vein removal, acne treatments, and much more.</p>
                 <a href="pages/skinpen.html" class="btn btn-dark text-white">Learn More</a>
             </div>
-          <div class="d-inline-block col-lg-3 box wow fadeInLeft  top"><br>
+          <div class="d-inline-block col-lg-3 box wow fadeInLeft  top">
             <img class="container m-auto p-3" src="img/2.jpg"><br><br>
               <h4 class="title m-auto p-auto">PrimeSpa</h4>
                <p class="containear m-auto p-auto">Services we offer include massage therapy, waxing, dermaplaning, and more.</p>
                 <a href="pages/massagetheraphy.html" class="btn btn-dark text-white">Learn More</a>
             </div>
 
-          <div class="d-inline-block col-lg-3 box wow fadeInLeft top"><br>
+          <div class="d-inline-block col-lg-3 box wow fadeInLeft top">
           <img class="container m-auto p-3" src="img/3.jpg"><br><br><br>
               <h4 class="title m-auto p-auto">Resources</h4>
                <p class="containear m-auto p-auto">Check out our Frequently Asked Questions.</p>
@@ -436,7 +416,7 @@ Your face is our specialty, and our mission is to help you feel confident in you
     <section id="portfolio" class="wow fadeInUp">
       <div class="">
         <div class="container">
-            <center><h2> What <b>We Do</b></h2></center>
+          <center><h2><b>WHAT</b> WE DO</h2></center>
           <h4 class="are"><b>Are You Ready For Prime Skin?</b></h4>
             <p>I have to admit, I used to depend on makeup for a good complexion.  But not anymore.  Now I'm focused on correcting my skin for a more radiant complexion --without makeup.  So are you ready to be makeup-free?  Are you ready for Prime skin?
 <br>
@@ -567,7 +547,7 @@ During our complimentary consultations, I help our guests select the best servic
 
 <section class="wow fadeInUp conta">
 <div>
-    <img src="logo1.png" class="fl col-md-2">
+    <img src="logo1.png" class="fl col-md-3">
     
 <span>
 <div class="col-md-3 d-inline-block container">
@@ -582,7 +562,7 @@ Address : 7307 S Yale Ave Tulsa, OK 74136<br>
 Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
 </div>
 
- <div class="col-md-5 d-inline-block">
+ <div class="col-md-3 d-inline-block">
 
 <h2 class="fl-heading">
 <span class="fl-heading-text"><strong>Opening</strong> Hours</span>

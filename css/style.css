@@ -50,14 +50,11 @@ a:focus {
 }
 .centered {
   position: absolute;
-  top: 70%;
+  top: 80%;
   background-color: gray; 
   color: white;
-  background-blend-mode: overlay;
-    opacity: 0.8;
-}
-.vdt{
-    margin-top: -500px; margin-left: 950px;
+  padding: 30px;
+  opacity: 0.8;
 }
 .fl-node-5a8aeb2020bc6 .pp-icon-list .pp-icon-list-items .pp-icon-list-item:hover .pp-list-item-icon {
 	background-color: #;
@@ -396,7 +393,12 @@ padding: 20px 0;
   font-style: normal;
   font-weight: normal;
 }
-
+.vdt{
+   z-index: 1;
+        position: relative;
+       margin-bottom: -320px;
+      margin-left: 1150px;
+}
 .sf-arrows ul .sf-with-ul:after {
   content: "\f105";
 }
@@ -1182,6 +1184,22 @@ opacity: 0.6;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+
+}
+@media screen and (max-width: 1320px) {
+  .vdt{
+   z-index: 1;
+        position: relative;
+       margin-bottom: -220px;
+      margin-left: 790px;
+}
+ .centered {
+  position: absolute;
+  top: 75%;
+  background-color: gray; 
+  color: white;
+  font-size: 12px;
+}   
 }
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
@@ -1198,6 +1216,9 @@ opacity: 0.6;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
+
+
+   
 }
 
 @media (max-width: 768px) {
