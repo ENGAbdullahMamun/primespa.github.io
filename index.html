@@ -28,6 +28,7 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <!-- Main Stylesheet File -->
 <link href="css/style.css" rel="stylesheet">
 
@@ -36,6 +37,37 @@
 
  $("#hide").click(function(){
     $("#show").toggle(1500);
+  });
+
+ $("#hm").mousemove(function(){
+    $("#free").css("color", "orange");
+  });
+   $("#ab").hover(function(){
+    $("#free").css("color", "green");
+  });
+   $("#pm").mouseover(function(){
+    $("#free").css("color", "blue");
+  });
+   $("#ps").mouseover(function(){
+    $("#free").css("color", "red");
+  });
+   $("#pd").mouseover(function(){
+    $("#free").css("color", "yellow");
+  });
+   $("#rs").mouseover(function(){
+    $("#free").css("color", "skyblue");
+  });
+  $("#cn").mouseover(function(){
+    $("#free").css("color", "gray");
+  });
+    $("#os").mouseover(function(){
+    $("#free").css("color", "darkkhaki");
+  });
+$("#pmd").mouseover(function(){
+    $("#free").css("color", "darkcyan");
+  });
+ $("#bl").mouseover(function(){
+    $("#free").css("color", "darkslategrey");
   });
 
   });
@@ -47,6 +79,7 @@
 <style>
     .text{
          animation: scr 5s infinite 0s ease;
+        color: darkslategrey
     }
     
     @keyframes scr{
@@ -93,15 +126,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', end
 box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
     <div class="container">
 <div id="logo" class="pull-left">
-     <a href="#body"><img src="logo.png" class="scrollto" height="50px"></a>
+     <a href="#body" style="font-family: 'Righteous', cursive; margin-top: -60px; color: black; font-weight: 700" ><span class="h2">Pain</span><span class="h2" id="free">Free</span><br><center><div style="margin-top: -10px">M e d i c a l   S p a</div></center></a>
         </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li class="menu-has-children"><a href="">PrimeMed</a>
+          <li class="menu-active"><a href="#body" id="hm">Home</a></li>
+          <li><a href="#about" id="ab">About Us</a></li>
+          <li><a href="#services" id="os">Our Services</a></li>
+          <li class="menu-has-children" id="pmd"><a href="">PrimeMed</a>
             <ul>
             <li><a href="pages/Acne.php">Acne Treatments</a></li>
             <li><a href="pages/botox.php" >Botox</a></li>
@@ -122,7 +155,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
             </ul>
            </li>
 
-          <li class="menu-has-children"><a href="">PrimeSpa</a>
+          <li class="menu-has-children"><a href="" id="ps">PrimeSpa</a>
             <ul>
                 <li><a href="pages/bridalparty.php" class="1">Bridal Party Beauty</a></li>
                 <li> <a href="pages/dermaplane.php" class="1">Dermaplane</a></li>
@@ -132,28 +165,28 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
             </ul>
           </li>
 
-            <li class="menu-has-children"><a href="">Products</a>
+            <li class="menu-has-children"><a href="" id="pd">Products</a>
             <ul>
               <li><a href="pages/additional.php" class="1">Aditional Skincare Lines</a></li>
               </ul>
           </li>
 
 
-            <li class="menu-has-children"><a href="">Resources</a>
+            <li class="menu-has-children"><a href="" id="rs">Resources</a>
             <ul>
             <li><a href="https://carecredit.com/" class="1">Care Credit</a></li>
               </ul>
           </li>
 
-          <li class="menu-has-children"><a href="">PrimeMen</a>
+          <li class="menu-has-children"><a href="" id="pm">PrimeMen</a>
             <ul>
               <li><a href="pages/mensfacials.php" class="1">Mens Facials</a>
             <a href="pages/hairlossrestorationmen.php" class="1">Hair Loss Restoration Men</a>
             <a href="pages/menslasehairremovel.php" class="1">Men's Laser Hair Removel</a></li>
              </ul>
           </li>
-          <li><a href="pages/contact.php">Contact</a></li>
-            <li><a href="pages/blog.php">Blog</a></li>
+          <li><a href="pages/contact.php" id="cn">Contact</a></li>
+            <li><a href="pages/blog.php" id="bl">Blog</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -172,7 +205,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
 							<p>
 								Enjoy some much needed me time during a three hour spa session
 							</p>
-						
+						 <button type="submit" name="submit" class="bttn mbt btn ">REQUEST AN APPOINTMENT</button>
 						</div><br>
 						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end P-5">
 
@@ -302,17 +335,7 @@ box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.63);">
               <div class="form-group">
               <textarea type="text" class="form-control" id="inputAddress" name="msg" placeholder="Message"></textarea>
                 </div>
-              <button type="submit" name="submit" class="btn btn-primary col-md-12" style="padding: 12px;background: rgba(247,131,193,1);
-background: -moz-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,131,193,1)), color-stop(100%, rgba(156,3,85,1)));
-background: -webkit-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -o-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: -ms-linear-gradient(left, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-background: linear-gradient(to right, rgba(247,131,193,1) 0%, rgba(156,3,85,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c1', endColorstr='#9c0355', GradientType=1 ); border-radius: 42px 42px 42px 42px;
--moz-border-radius: 42px 42px 42px 42px;
--webkit-border-radius: 42px 42px 42px 42px;
-border: 0px solid #000000;">REQUEST AN APPOINTMENT</button>
+              <button type="submit" name="submit" class="btn btn-primary col-md-12 bttn">REQUEST AN APPOINTMENT</button>
 
 
                        </form>
@@ -324,69 +347,74 @@ border: 0px solid #000000;">REQUEST AN APPOINTMENT</button>
         </div>
         <br><br>
   </section>
-  <main id="main">
-
 <section class="wow fadeInUp">
    <div class="loca">
-<div class="container" style="">
-<div class="d-inline-block acc" style="">
-	<ul class="pp-icon-list-items pp-list-type-icon">
-
-
-			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-map-marker"></span><strong>Location</strong><br>
-				<span class="lead" style="margin-left: 10px">7307 S Yale Ave Tulsa, OK 74136</span>
+<div class="container ext">
+    <loc>
+   <div class="d-inline-block acc1 locc">
+	<ul class="pp-icon-list-items pp-list-type-icon" style="display: flex">
+        <span class="pp-list-item-icon fa fa-cogs"></span>	
+        <li class="pp-icon-list-item pp-icon-list-item-0 d-inline-block" style="list-style: none" >
+                <strong>Cutting edge</strong><br>
+				<span class="lead">Technology</span>
 			</li>
-
-
-		</ul>
-</div>
-<loc>
+       </ul>
+</div> 
 <div class="d-inline-block acc1 locc">
 	<ul class="pp-icon-list-items pp-list-type-icon">
-			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none ;">
-                <span class="pp-list-item-icon ua-icon fa fa-users"></span><strong>Experienced</strong><br>
-				<span class="lead" style="margin-left: 20px">Team</span>
+        <span class="pp-list-item-icon ua-icon fa fa-users"></span>
+			<li class="pp-icon-list-item pp-icon-list-item-0 d-inline-block" style="list-style: none ;">
+                <strong>Experienced</strong><br>
+				<span class="lead">Team</span>
 			</li>
-
-
-		</ul>
+</ul>
 </div>
-<div class="d-inline-block acc1 locc">
-	<ul class="pp-icon-list-items pp-list-type-icon">
-
-
-			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-cogs"></span><strong>Cutting edge</strong><br>
-				<span class="lead" style="margin-left: 20px">Technology</span>
-			</li>
-
-
-		</ul>
-</div>
-<div class="d-inline-block acc1 locc">
-	<ul class="pp-icon-list-items pp-list-type-icon">
-
-
-			<li class="pp-icon-list-item pp-icon-list-item-0" style="list-style: none">
-                <span class="pp-list-item-icon fa fa-smile-o"></span>
+        
+        
+ <div class="d-inline-block acc1 ">
+	 <ul class="pp-icon-list-items pp-list-type-icon">
+         <span class="pp-list-item-icon fa fa-smile-o"></span>
+			 <li class="pp-icon-list-item pp-icon-list-item-0 d-inline-block" style="list-style: none">
                 <strong>You will fee</strong><br>
-				<span class="lead" style="margin-left: 20px">Rejuvenated</span>
+			 	<span class="lead">Rejuvenated</span>
 			</li>
+        </ul>
+    </div>
+      </loc>
+    <style>
+.pp-list-item-icon {
+color: white;
+font-size: 27px;
+border: 3px solid white;
+padding: 8px;
+border-radius: 200px 200px 200px 200px;
+}
+        
+    </style>
+    
+    <div class="d-inline-block acc1 ">
+	<ul class="pp-icon-list-items pp-list-type-icon">
+<span class="pp-list-item-icon fa fa-map-marker"></span>
+			<lii class="pp-icon-list-item pp-icon-list-item-0 d-inline-block" style="list-style: none">
+                <div style="margin: 0px">
+               <strong>Location</strong><br>
+				<span class="lead">7307 S Yale Ave Tulsa, OK 74136</span></div>
+			</lii>
 
 
 		</ul>
 </div>
-      </loc>
+    
+    
 </div>
 </div>
-      </section></main>
+      </section>
 <section style="margin-top: 25px">
  <center>
    <div class="col-lg-11 d-inline-block wow fadeInUp">
- <video class="embed-responsive-1by1  col-4 vdt" controls>
-         <source src="325474563.mp4"/>
-</video>   
+<video class="vdt col-4" poster="over.jpg" controls>
+   <source src="325474563.mp4" type="video/mp4">
+</video>
  <div class="embed-responsive embed-responsive-16by9 ">
    
   <img class="embed-responsive-item" src="img/rec.jpg"/>
@@ -573,7 +601,7 @@ During our complimentary consultations, I help our guests select the best servic
 <div class="col-md-3 d-inline-block container">
 
 <h3>
-<span><strong>Contact</strong></span>
+<span><strong class="text-warning">Contact</strong></span>
 </h3>
 Phone : +918 710 5060<br>
 Fax : +918 392 4555<br>
@@ -585,7 +613,7 @@ Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
  <div class="col-md-5 d-inline-block">
 
 <h2 class="fl-heading">
-<span class="fl-heading-text"><strong>Opening</strong> Hours</span>
+<span class="fl-heading-text text-info"><strong class="text-warning">Opening</strong> Hours</span>
 </h2>
 <div class="col-md-5 d-inline-block">Monday	</div>
 <div class="col-md-5 d-inline-block">
@@ -610,7 +638,7 @@ Facebook : <a href="https://www.facebook.com/primemedspa/">Primemedspa</a><hr>
 <div class="col-md-5 d-inline-block">
 <time itemprop="opens" content="11:00 AM">11:00 AM</time> - <time itemprop="closes" content="5:00 PM">5:00 PM</time>			</div>
 <div class="fl-rich-text">
-<b>Sunday by appointment only.</b>
+<b class="text-warning">Sunday by appointment only.</b>
 </div>
 </div>
     </span>
