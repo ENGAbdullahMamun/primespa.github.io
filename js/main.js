@@ -1,33 +1,26 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
 
-  // Back to top button
-  $(window).scroll(function () {
+  // Header fixed and Back to top button
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
+      $('#header').addClass('header-fixed');
     } else {
       $('.back-to-top').fadeOut('slow');
+      $('#header').removeClass('header-fixed');
     }
   });
-  $('.back-to-top').click(function () {
+
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top').fadeIn('slow');
+    $('#header').addClass('header-fixed');
+  }
+
+  $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
     return false;
-  });
-
-  // Stick the header at top on scroll
-  $("#header").sticky({
-    topSpacing: 0,
-    zIndex: '50'
-  });
-
-  // Intro background carousel
-  $("#intro-carousel").owlCarousel({
-    autoplay: true,
-    dots: false,
-    loop: true,
-    animateOut: 'fadeOut',
-    items: 1
   });
 
   // Initiate the wowjs animation library
@@ -55,19 +48,19 @@ jQuery(document).ready(function ($) {
     $('body').append('<div id="mobile-body-overly"></div>');
     $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
 
-    $(document).on('click', '.menu-has-children i', function (e) {
+    $(document).on('click', '.menu-has-children i', function(e) {
       $(this).next().toggleClass('menu-item-active');
       $(this).nextAll('ul').eq(0).slideToggle();
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function (e) {
+    $(document).on('click', '#mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
       $('#mobile-body-overly').toggle();
     });
 
-    $(document).click(function (e) {
+    $(document).click(function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
@@ -81,8 +74,8 @@ jQuery(document).ready(function ($) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function () {
+  // Smoth scroll on page hash links
+  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -91,7 +84,7 @@ jQuery(document).ready(function ($) {
         if ($('#header').length) {
           top_space = $('#header').outerHeight();
 
-          if (!$('#header').hasClass('header-fixed')) {
+          if( ! $('#header').hasClass('header-fixed') ) {
             top_space = top_space - 20;
           }
         }
@@ -115,9 +108,8 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-  // Porfolio - uses the magnific popup jQuery plugin
-  $('.portfolio-popup').magnificPopup({
+  // Gallery - uses the magnific popup jQuery plugin
+  $('.gallery-popup').magnificPopup({
     type: 'image',
     removalDelay: 300,
     mainClass: 'mfp-fade',
@@ -128,47 +120,12 @@ jQuery(document).ready(function ($) {
       enabled: true,
       duration: 300,
       easing: 'ease-in-out',
-      opener: function (openerElement) {
+      opener: function(openerElement) {
         return openerElement.is('img') ? openerElement : openerElement.find('img');
       }
     }
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 4
-      },
-      900: {
-        items: 6
-      }
-    }
-  });
-
+  // custom code
 
 });
